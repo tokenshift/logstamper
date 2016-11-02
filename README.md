@@ -18,6 +18,12 @@ The `--level` option is useful when you're stamping both STDOUT and STDERR:
 $ { some_command 2>&3 | logstamper -l STDOUT; } 3>&1 1>&2 | logstamper -l STDERR
 ```
 
+## Installation
+
+```
+go install github.com/tokenshift/logstamper
+```
+
 ## Options
 
 * **`--format {FORMAT}`**, **`-f {FORMAT}`**  
