@@ -9,7 +9,7 @@ import (
 	"github.com/alecthomas/kingpin"
 )
 
-const defaultFormat = "2006-01-02T15:04:05.999Z07:00"
+const defaultFormat = "2006-01-02T15:04:05.000Z07:00"
 
 var (
 	argFormat = kingpin.Flag("format", "A custom date/time format to use. See README.md.").Short('f').Default(defaultFormat).String()
